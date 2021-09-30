@@ -17,6 +17,8 @@
 		43AF723527061E3A000DEB32 /* agendaTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF723427061E3A000DEB32 /* agendaTableViewUITests.swift */; };
 		43AF723727061E3A000DEB32 /* agendaTableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF723627061E3A000DEB32 /* agendaTableViewUITestsLaunchTests.swift */; };
 		43AF7244270620C6000DEB32 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF7243270620C6000DEB32 /* AgendaTableViewCell.swift */; };
+		43AF724627062493000DEB32 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF724527062493000DEB32 /* Contato.swift */; };
+		43AF724C27062975000DEB32 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF724B27062975000DEB32 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		43AF723427061E3A000DEB32 /* agendaTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendaTableViewUITests.swift; sourceTree = "<group>"; };
 		43AF723627061E3A000DEB32 /* agendaTableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendaTableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43AF7243270620C6000DEB32 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
+		43AF724527062493000DEB32 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		43AF724B27062975000DEB32 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,10 @@
 		43AF720727061E34000DEB32 = {
 			isa = PBXGroup;
 			children = (
+				43AF724A2706296A000DEB32 /* Data */,
+				43AF72492706273C000DEB32 /* Controller */,
+				43AF72482706272E000DEB32 /* Model */,
+				43AF724727062710000DEB32 /* View */,
 				43AF721227061E34000DEB32 /* agendaTableView */,
 				43AF722927061E3A000DEB32 /* agendaTableViewTests */,
 				43AF723327061E3A000DEB32 /* agendaTableViewUITests */,
@@ -107,8 +115,8 @@
 				43AF721927061E34000DEB32 /* Main.storyboard */,
 				43AF721C27061E39000DEB32 /* Assets.xcassets */,
 				43AF721E27061E39000DEB32 /* LaunchScreen.storyboard */,
+				43AF724527062493000DEB32 /* Contato.swift */,
 				43AF722127061E39000DEB32 /* Info.plist */,
-				43AF7243270620C6000DEB32 /* AgendaTableViewCell.swift */,
 			);
 			path = agendaTableView;
 			sourceTree = "<group>";
@@ -128,6 +136,36 @@
 				43AF723627061E3A000DEB32 /* agendaTableViewUITestsLaunchTests.swift */,
 			);
 			path = agendaTableViewUITests;
+			sourceTree = "<group>";
+		};
+		43AF724727062710000DEB32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43AF7243270620C6000DEB32 /* AgendaTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43AF72482706272E000DEB32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43AF72492706273C000DEB32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		43AF724A2706296A000DEB32 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				43AF724B27062975000DEB32 /* Service.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +302,9 @@
 				43AF721827061E34000DEB32 /* ViewController.swift in Sources */,
 				43AF721427061E34000DEB32 /* AppDelegate.swift in Sources */,
 				43AF721627061E34000DEB32 /* SceneDelegate.swift in Sources */,
+				43AF724627062493000DEB32 /* Contato.swift in Sources */,
 				43AF7244270620C6000DEB32 /* AgendaTableViewCell.swift in Sources */,
+				43AF724C27062975000DEB32 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
