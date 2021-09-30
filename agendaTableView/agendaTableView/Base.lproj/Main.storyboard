@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="agendaTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZ3-L7-GVP">
+                                <rect key="frame" x="8" y="60" width="327" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DOy-EX-NgZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qxb-hM-IT1">
+                                <rect key="frame" x="339" y="60" width="67" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="NrE-zi-huE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="consultaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7s-A7-vj9"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fxK-MI-Xl4">
+                                <rect key="frame" x="8" y="108" width="398" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="agendaTableViewCell" id="hpe-N0-h6Q" customClass="AgendaTableViewCell" customModule="agendaTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="398" height="51.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hpe-N0-h6Q" id="Ree-Gd-5cJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="51.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQG-qG-9c2">
+                                                    <rect key="frame" x="24" y="15" width="350" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PQG-qG-9c2" firstAttribute="leading" secondItem="Ree-Gd-5cJ" secondAttribute="leadingMargin" constant="4" id="FFv-a8-hBr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PQG-qG-9c2" secondAttribute="trailing" constant="4" id="YJy-27-VFF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PQG-qG-9c2" secondAttribute="bottom" constant="4" id="bmD-hv-Uzk"/>
+                                                <constraint firstItem="PQG-qG-9c2" firstAttribute="top" secondItem="Ree-Gd-5cJ" secondAttribute="topMargin" constant="4" id="wt1-bB-fBR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fxK-MI-Xl4" secondAttribute="bottom" constant="8" id="0Ve-Dd-eYM"/>
+                            <constraint firstItem="aZ3-L7-GVP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4wX-c0-Au4"/>
+                            <constraint firstItem="fxK-MI-Xl4" firstAttribute="top" secondItem="Qxb-hM-IT1" secondAttribute="bottom" constant="8" symbolic="YES" id="Kgl-gT-yy7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxK-MI-Xl4" secondAttribute="trailing" constant="8" id="cXH-hE-eNJ"/>
+                            <constraint firstItem="fxK-MI-Xl4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="dIG-sb-KBS"/>
+                            <constraint firstItem="Qxb-hM-IT1" firstAttribute="leading" secondItem="aZ3-L7-GVP" secondAttribute="trailing" constant="4" id="dOK-Fb-xTw"/>
+                            <constraint firstItem="aZ3-L7-GVP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="dfq-nQ-Pl9"/>
+                            <constraint firstItem="Qxb-hM-IT1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="iZf-ZV-Dch"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qxb-hM-IT1" secondAttribute="trailing" constant="8" id="uYf-Zy-f6M"/>
+                            <constraint firstItem="fxK-MI-Xl4" firstAttribute="top" secondItem="aZ3-L7-GVP" secondAttribute="bottom" constant="8" id="zFC-AY-cgS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="consultaTextField" destination="aZ3-L7-GVP" id="80x-tM-gab"/>
+                        <outlet property="tableView" destination="fxK-MI-Xl4" id="IW1-A6-cEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
