@@ -86,17 +86,17 @@
                     <connections>
                         <outlet property="consultaTextField" destination="aZ3-L7-GVP" id="80x-tM-gab"/>
                         <outlet property="tableView" destination="fxK-MI-Xl4" id="IW1-A6-cEC"/>
-                        <segue destination="g78-Sn-QJE" kind="show" id="tQb-2a-tnJ"/>
+                        <segue destination="g78-Sn-QJE" kind="show" identifier="segueTelaContato" id="tQb-2a-tnJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="53.571428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalhe Contato View Controller-->
         <scene sceneID="vmn-wM-cKc">
             <objects>
-                <viewController id="g78-Sn-QJE" sceneMemberID="viewController">
+                <viewController id="g78-Sn-QJE" customClass="DetalheContatoViewController" customModule="agendaTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vCa-xC-68G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

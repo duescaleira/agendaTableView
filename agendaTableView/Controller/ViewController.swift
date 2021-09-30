@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detalheContato = segue.destination as? DetalheContatoViewController, segue.identifier == "segueTelaContato" {
+            detalheContato.contato = sender as? Contato
+        }
+    }
+    
     private func loadContatos() {
         contatos = service.getContatos()
     }
@@ -46,6 +52,10 @@ extension ViewController: UITextFieldDelegate {
 
 
 extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueTelaContato", sender: contatos[indexPath.row])
+    }
 }
 
 

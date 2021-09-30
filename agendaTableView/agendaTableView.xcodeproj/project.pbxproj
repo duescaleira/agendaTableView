@@ -19,6 +19,7 @@
 		43AF7244270620C6000DEB32 /* AgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF7243270620C6000DEB32 /* AgendaTableViewCell.swift */; };
 		43AF724627062493000DEB32 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF724527062493000DEB32 /* Contato.swift */; };
 		43AF724C27062975000DEB32 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF724B27062975000DEB32 /* Service.swift */; };
+		43AF724E270638AE000DEB32 /* DetalheContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AF724D270638AE000DEB32 /* DetalheContatoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		43AF7243270620C6000DEB32 /* AgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTableViewCell.swift; sourceTree = "<group>"; };
 		43AF724527062493000DEB32 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		43AF724B27062975000DEB32 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		43AF724D270638AE000DEB32 /* DetalheContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheContatoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,6 @@
 			children = (
 				43AF721327061E34000DEB32 /* AppDelegate.swift */,
 				43AF721527061E34000DEB32 /* SceneDelegate.swift */,
-				43AF721727061E34000DEB32 /* ViewController.swift */,
 				43AF721927061E34000DEB32 /* Main.storyboard */,
 				43AF721C27061E39000DEB32 /* Assets.xcassets */,
 				43AF721E27061E39000DEB32 /* LaunchScreen.storyboard */,
@@ -156,6 +157,8 @@
 		43AF72492706273C000DEB32 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				43AF721727061E34000DEB32 /* ViewController.swift */,
+				43AF724D270638AE000DEB32 /* DetalheContatoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				43AF721827061E34000DEB32 /* ViewController.swift in Sources */,
 				43AF721427061E34000DEB32 /* AppDelegate.swift in Sources */,
 				43AF721627061E34000DEB32 /* SceneDelegate.swift in Sources */,
+				43AF724E270638AE000DEB32 /* DetalheContatoViewController.swift in Sources */,
 				43AF724627062493000DEB32 /* Contato.swift in Sources */,
 				43AF7244270620C6000DEB32 /* AgendaTableViewCell.swift in Sources */,
 				43AF724C27062975000DEB32 /* Service.swift in Sources */,
